@@ -1,0 +1,69 @@
+.menu {
+	margin: auto;
+	width: 85%;
+}
+
+.menuSlideShow {
+	padding-right: 20px;
+}
+
+.menuSlideShow div {
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.menuSlideShowDesc {
+	padding-top: 80px;
+	font-family: PT Sans Narrow;
+	font-size: 18px;
+	text-align: justify;
+	width: 45%;
+	float: left;
+}
+
+.menuLink {
+	padding-top: 100px;
+}
+
+.menuLink a img {
+	margin: 0 50px 50px 0;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.menuLink a img:hover {
+	box-shadow: 10px 10px 5px rgb(250,145,85);
+}
+
+.menuSlideShow {
+	top: 80px;
+	width: 450px;
+	position: relative;
+	height: 300px;
+	float: left;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@media screen and (max-width:800px) {
+	.menuLink {
+		padding-top: 0px;
+	}
+	
+	.menuSlideShow, .menuSlideShowDesc {
+		width: 100%;
+	}
+}
